@@ -11,7 +11,6 @@
     font-family: var(--font-family-inter);
     color: var(--color-white);
     max-width: 100%;
-    overflow: hidden;
 }
   
 body, button, input, textarea, select {
@@ -68,9 +67,9 @@ html:focus-within {
     --font-size-base: 1.6rem;
     --font-size-title: 2.4rem;
 
-    --layout-mobile: 375px;
-    --layout-desktop-small: 1024px;
-    --layout-desktop: 1440px;
+    --layout-mobile: 37.5rem;
+    --layout-desktop-small: 102.4rem;
+    --layout-desktop: 144rem;
 
     --color-green: hsl(75, 94%, 57%);
     --color-white: hsl(0, 0%, 100%);

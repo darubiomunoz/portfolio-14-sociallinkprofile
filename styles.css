@@ -1,17 +1,15 @@
 .main {
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     margin: 5rem 0;
 }
 
 .socialLinkProfile {
     width: 75%;
     max-width: 28rem;
-    height: auto;
-    align-self: center;
     background-color: var(--color-gray800);
     border-radius: 2rem;
     display: flex;
@@ -23,7 +21,6 @@
 
 .socialLinkProfile__personalData {
     width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,7 +30,6 @@
 
 .personalData__imageWrapper {
     width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +38,6 @@
 
 .personalData__image {
     width: 9rem;
-    height: auto;
     border-radius: 50%;
 }
 
@@ -60,7 +55,6 @@
 
 .socialLinkProfile__description {
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
     padding: 2rem 0;
@@ -75,14 +69,12 @@
 
 .socialLinkProfile__networks {
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
 }
 
 .networks__listWrapper {
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +84,6 @@
 
 .networks__item {
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
 }
@@ -100,7 +91,6 @@
 .networks__link {
     width: 85%;
     max-width: 25rem;
-    height: auto;
     text-align: center;
     padding: .9rem;
     display: flex;
@@ -109,6 +99,7 @@
     border-radius: 1rem;
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-medium);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .networks__link:hover {
@@ -116,7 +107,7 @@
     color: var(--color-gray900);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 102.4rem) {
     .main {
         margin: 0;
     }
