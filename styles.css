@@ -1,102 +1,14 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-  
-* {
-    margin: 0;
-    padding: 0;
-    font-size: 62.5%;
-    list-style: none;
-    text-decoration: none;
-    font-family: var(--font-family-inter);
-    color: var(--color-white);
-    max-width: 100%;
-    overflow: hidden;
-}
-  
-body, button, input, textarea, select {
-    font: inherit;
-}
-
-img, picture, svg, video, canvas {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-ul[role='list'], ol[role='list'] {
-    list-style: none;
-}
-
-body {
-    min-height: 100vh;
-    width: 100vw;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    background-color: var(--color-gray900);
-}
-
-a:not([class]) {
-    text-decoration-skip-ink: auto;
-}
-
-html:focus-within {
-    scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-      scroll-behavior: auto;
-    }
-    
-    *, *::before, *::after {
-      animation-duration: 0.01ms;
-      animation-iteration-count: 1;
-      transition-duration: 0.01ms;
-      scroll-behavior: auto;
-    }
-}
-
-:root {
-    --font-family-inter: 'Inter', sans-serif;
-
-    --font-weight-normal: 400;
-    --font-weight-medium: 600;
-    --font-weight-bold: 700;
-
-    --font-size-small: 1.1rem;
-    --font-size-base: 1.6rem;
-    --font-size-title: 2.4rem;
-
-    --layout-mobile: 375px;
-    --layout-desktop-small: 1024px;
-    --layout-desktop: 1440px;
-
-    --color-green: hsl(75, 94%, 57%);
-    --color-white: hsl(0, 0%, 100%);
-    --color-gray700: hsl(0, 0%, 20%);
-    --color-gray800: hsl(0, 0%, 12%);
-    --color-gray900: hsl(0, 0%, 8%);
-
-    --border-radius: 2rem;
-
-    --margin-base: 3rem;
-}
-
 .main {
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-content: center;
-    margin: 5rem 0;
+    align-items: center;
 }
 
 .socialLinkProfile {
     width: 75%;
     max-width: 28rem;
-    height: auto;
-    align-self: center;
     background-color: var(--color-gray800);
     border-radius: 2rem;
     display: flex;
@@ -108,7 +20,6 @@ html:focus-within {
 
 .socialLinkProfile__personalData {
     width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,7 +29,6 @@ html:focus-within {
 
 .personalData__imageWrapper {
     width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,7 +37,6 @@ html:focus-within {
 
 .personalData__image {
     width: 9rem;
-    height: auto;
     border-radius: 50%;
 }
 
@@ -145,7 +54,6 @@ html:focus-within {
 
 .socialLinkProfile__description {
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
     padding: 2rem 0;
@@ -160,14 +68,12 @@ html:focus-within {
 
 .socialLinkProfile__networks {
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
 }
 
 .networks__listWrapper {
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,7 +83,6 @@ html:focus-within {
 
 .networks__item {
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
 }
@@ -185,7 +90,6 @@ html:focus-within {
 .networks__link {
     width: 85%;
     max-width: 25rem;
-    height: auto;
     text-align: center;
     padding: .9rem;
     display: flex;
@@ -194,15 +98,10 @@ html:focus-within {
     border-radius: 1rem;
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-medium);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .networks__link:hover {
     background-color: var(--color-green);
     color: var(--color-gray900);
-}
-
-@media (min-width: 1024px) {
-    .main {
-        margin: 0;
-    }
 }
