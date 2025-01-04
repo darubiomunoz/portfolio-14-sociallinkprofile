@@ -105,9 +105,3 @@
     background-color: var(--color-green);
     color: var(--color-gray900);
 }
-
-@media (min-width: 102.4rem) {
-    .main {
-        margin: 0;
-    }
-}
