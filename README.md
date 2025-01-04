@@ -142,7 +142,7 @@ Project Link: [https://portfolio-14-sociallinkprofile.vercel.app/](  https://por
 
 
 
-:copyright: _Diego Rubio - 2024_
+:copyright: _Diego Rubio - 2025_
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
